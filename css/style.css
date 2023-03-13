@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    grid-area: na;
+    background-color: rgb(66, 56, 20);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#burger div {
+    width: 40px;
+    height: 7px;
+    background-color: rgba(232, 103, 48, 0.674);
+    margin: 7px;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+#nav-links{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 200px;
+    background-color: rgb(113, 113, 113);
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: -500px;
+    right: 0px;
+    transition: all 0.75s;
+}
+
+#nav-links li{
+    list-style: none;
+}
+
+#nav-links a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    letter-spacing: 0.1875rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#burger {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.burger_toggle #burger_line_1 {
+    transform: rotate(-45deg) translate(-9px, 10px)
+}
+
+.burger_toggle #burger_line_2 {
+    opacity: 0;
+}
+
+.burger_toggle #burger_line_3 {
+    transform: rotate(45deg) translate(-10px, -10px)
+}
+
+.nav_active {
+    transform: translateY(580px);
+}
+
+#nav-links a:hover{
+    cursor:pointer
+}
+
+#grid_wrapper {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 200px;
+    grid-template-rows: 100px 750px 200px 800px 200px;
+    grid-template-areas: 
+    "he na"
+    "s1 s1"
+    "s2 s2"
+    "s3 s3"
+    "fo fo"
+    ;
+}
+
+header {
+    grid-area: he;
+    background: rgb(147, 124, 68);
+}
+
+#section_1 {
+    grid-area: s1;
+    background: rgb(117, 90, 72);
+}
+
+
+#section_2 {
+    grid-area: s2;
+    background: darkgreen;
+}
+
+
+#section_3 {
+    grid-area: s3;
+    background: darkgreen;
+}
+
+
+footer {
+    grid-area: fo;
+    background: rgb(118, 39, 39);
+}
+
+@media screen and (min-width: 800px){
+   
+   
+    #grid_wrapper {
+        display: grid;
+        grid-template-columns: minmax(1fr, 1fr);
+        grid-template-rows: 80px, 100px, 400px, 400px, 80px;
+        grid-template-areas: 
+        "na na"
+        "he he"
+        "s1 s2"
+        "s3 s3"
+        "fo fo"
+        ;
+    }
+    #nav-links{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 200px;
+        background-color: rgb(113, 113, 113);
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: -500px;
+        right: 0px;
+        transition: all 0.25s;
+        grid-area: na;
+    }
+    
+    #nav-links {
+        flex-direction: row;
+        height: 80px;
+        width: 100%;
+        background-color: lightslategray;
+        top: 0px;
+    }
+
+    .nav_active {
+        transform: none;
+    }
+
+
+    
+    
+}
