@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-nav{
+#nav_1{
     grid-area: na;
-    background-color: rgb(66, 56, 20);
+    background-color: rgba(159, 160, 154);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -14,9 +14,17 @@ nav{
 }
 
 h1{
-    
+
+    font-size: 50px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.5px;
+
+}
+
+h3 {
     font-size: 40px;
-    color: black;
 }
 
 #burger div {
@@ -50,15 +58,18 @@ h1{
     text-decoration: none;
     font-size: 1.25rem;
     letter-spacing: 0.1875rem;
-    color: rgb(0, 0, 0);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-family: 'Gloria Hallelujah';
     font-weight: bold;
     text-transform: uppercase;
+
+
 }
 
 #burger {
     margin-right: 50px;
     cursor: pointer;
+    
 }
 
 .burger_toggle #burger_line_1 {
@@ -96,30 +107,37 @@ h1{
 
 header {
     grid-area: he;
-    background: rgb(147, 124, 68);
+    background: rgb(159, 160, 154);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #section_1 {
     grid-area: s1;
-    background: rgb(117, 90, 72);
+    background: rgb(99, 92, 68);
 }
 
 
 #section_2 {
     grid-area: s2;
-    background: darkgreen;
+    background: rgb(147, 124, 68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 
 #section_3 {
     grid-area: s3;
-    background: darkgreen;
+    background: rgb(99, 92, 68);
 }
 
 
 footer {
     grid-area: fo;
-    background: rgb(118, 39, 39);
+    background: rgb(77, 40, 0);
 }
 
 @media screen and (min-width: 800px){
@@ -128,35 +146,22 @@ footer {
     #grid_wrapper {
         display: grid;
         grid-template-columns: minmax(1fr, 1fr);
-        grid-template-rows: 100px, 100px, 400px, 400px, 80px;
+        grid-template-rows: 100px, 750px, 200px, 800px, 200px;
         grid-template-areas: 
-        "na na"
-        "he he"
-        "s1 s2"
+        "he na"
+        "s1 s1"
+        "s2 s2"
         "s3 s3"
         "fo fo"
         ;
     }
-    #nav-links{
-        display: flex;
-        flex-direction: column;
-        height: 500px;
-        width: 200px;
-        background-color: rgb(113, 113, 113);
-        justify-content: space-around;
-        align-items: center;
-        position: absolute;
-        top: -500px;
-        right: 0px;
-        transition: all 0.25s;
-        grid-area: na;
-    }
+    
     
     #nav-links {
         flex-direction: row;
-        height: 80px;
-        width: 100%;
-        background-color: lightslategray;
+        height: 100px;
+        width: 50vw;
+        background-color: rgb(159, 160, 154);
         top: 0px;
     }
 
@@ -164,7 +169,18 @@ footer {
         transform: none;
     }
 
+    .burger_toggle {
 
+        display: none;
+    }
+
+    header {
+        width: 50vw;
+    }
+
+    nav {
+        color: rgba(159, 160, 154, 0);
+    }
     
     
 }
