@@ -4,15 +4,29 @@
     box-sizing: border-box;
 }
 
-#nav_1{
+#inav_1{
     grid-area: na;
-    background-color: rgba(159, 160, 154);
+    background-color: rgb(159, 160, 154);
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 
 }
+#machinarium_logo {
+    height: 75%;
+    width: 75%;
+    position: relative;
+    top: 10px;
+    left: 35px;
+}
 
+h3 {
+    margin: 15px;
+}
+/*
 h1{
 
     font-size: 50px;
@@ -22,24 +36,199 @@ h1{
     -webkit-text-stroke-width: 0.5px;
 
 }
+*/
 
-h3 {
-    font-size: 40px;
+#idiv_1 {
+    background-color: rgba(96, 96, 110, 0.85);
+    height: 10%;
+    width: 40%;
+    position: relative;
+    top: 80px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Gloria Hallelujah';
+    border-radius: 7px;
 }
+
+#idiv_2 {
+    height: 20px;
+    width: auto;
+    font-size: 20px;
+    position: relative;
+    left: 70px;
+    font-style: italic;
+   
+}
+
+#idiv_3 {
+    width: 70%;
+    height: 600px;
+    background-color:rgba(96, 96, 110, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 15px;
+
+}
+
+#idiv_4 {
+    width: 50%;
+    height: 70px;
+    position: relative;
+    bottom: 20px;
+    font-size: 135%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:rgba(104, 104, 108, 0.826) ;
+    border-color: rgba(0, 0, 0, 0.301);
+    border-style: solid;
+    border-radius: 7px;
+    font-family: 'Gloria Hallelujah';
+    padding: 5px;
+}
+
+
+#idiv_5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    position: relative;
+    left: 25px;
+    font-size: 80%;
+    width: 100px;
+
+}
+#idiv_6 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    position: relative;
+    left: 15px;
+    font-size: 80%;
+    width: 100px;
+}
+
+#idiv_7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    position: relative;
+    font-size: 70%;
+ 
+    
+}
+
+
+.container {
+    height: 200px;
+    font-family: 'Gloria Hallelujah';
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+
+
+
+.blink:hover {
+    border: 3px dashed #ccc;
+    padding: 20px;
+    transition: all 0.2s ease;
+}
+
+.blink {
+  border-color: transparent;
+    
+}
+
+#icontainer_1 {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    display: flex; 
+    justify-content: space-around; 
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+#iimgcontainer_1 {
+    height: 50%;
+    width: auto;
+    position: relative;
+   
+
+}
+
+#iimgcontainer_2 {
+    height: 50%;
+    width: auto;
+    position: relative;
+}
+
+#iimgcontainer_3 {
+    height: 50%;
+    width: auto;
+    position: relative;
+}
+
+
+
 
 #burger div {
-    width: 40px;
-    height: 7px;
-    background-color: rgba(232, 103, 48, 0.674);
-    margin: 7px;
+    width: 30px;
+    height: 5.25px;
+    background-color: rgb(232, 103, 48);
     border-radius: 15px;
     transition: all 0.5s;
+    margin: 5px;
+    
+    
 }
+
+#iarticle_1 {
+    background-color:rgba(96, 96, 110, 0.85);
+    height: 500px;
+    width: 300px;
+    position: relative;
+    top: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: rgb(218, 218, 218);
+    margin: 5px;
+    padding: 7px;
+    border-radius: 7px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 14px;
+}
+
+#iarticle_2 {
+    width: 70%;
+    height: 400px;
+    font-size: 65%;
+    color: white;
+}
+
 
 #nav-links{
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 300px;
     width: 200px;
     background-color: rgb(113, 113, 113);
     justify-content: space-around;
@@ -48,6 +237,7 @@ h3 {
     top: -500px;
     right: 0px;
     transition: all 0.75s;
+    z-index: 3;
 }
 
 #nav-links li{
@@ -67,13 +257,11 @@ h3 {
 }
 
 #burger {
-    margin-right: 50px;
     cursor: pointer;
-    
 }
 
 .burger_toggle #burger_line_1 {
-    transform: rotate(-45deg) translate(-9px, 10px)
+    transform: rotate(-45deg) translate(-4px, 9px)
 }
 
 .burger_toggle #burger_line_2 {
@@ -81,7 +269,7 @@ h3 {
 }
 
 .burger_toggle #burger_line_3 {
-    transform: rotate(45deg) translate(-10px, -10px)
+    transform: rotate(45deg) translate(-6px, -10px)
 }
 
 .nav_active {
@@ -92,60 +280,288 @@ h3 {
     cursor:pointer
 }
 
-#grid_wrapper {
+#igrid_wrapper {
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) 200px;
+    grid-template-columns: 50% 25% 25%;
     grid-template-rows: 100px 750px 200px 800px 200px;
     grid-template-areas: 
-    "he na"
-    "s1 s1"
-    "s2 s2"
-    "s3 s3"
-    "fo fo"
+    "he he na"
+    "s1 s1 s1"
+    "s2 s2 s2"
+    "s3 s3 s3"
+    "fo fo fo"
     ;
 }
 
 header {
     grid-area: he;
     background: rgb(159, 160, 154);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+    
 }
 
-#section_1 {
+#isection_1 {
     grid-area: s1;
-    background: rgb(99, 92, 68);
-}
-
-
-#section_2 {
-    grid-area: s2;
-    background: rgb(147, 124, 68);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: url(/img/machinarium.background.crop.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 
 
-#section_3 {
+#isection_2 {
+    grid-area: s2;
+    background: rgb(147, 124, 68);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+#isection_3 {
     grid-area: s3;
-    background: rgb(99, 92, 68);
+    background: rgb(107, 103, 92);
+    position: relative;
+    background-image: url(/img/machinarium.background.2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
-footer {
+#footer_1 {
     grid-area: fo;
-    background: rgb(77, 40, 0);
+    background: rgb(113, 113, 113);
+    position: relative;
 }
+
+
+
+#amgrid_wrapper {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 100px 750px 800px ;
+    grid-template-areas: 
+    "he he na"
+    "s1 s1 s1"
+    "s2 s2 s2"
+    ;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+
+#swiper_img1 {
+    background-image: url(/img/samorost.background.crop.jpg);
+    background-size: cover;
+}
+
+#swiper_img2 {
+    background-image: url(/img/botanicula.background.crop.jpeg);
+    background-size: cover;
+
+}
+
+#swiper_img3 {
+    background-image: url(/img/phonopolis.background.crop.jpg);
+    background-size: cover;
+}
+
+
+#amcontainer_1 {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    display: flex; 
+    justify-content: space-around; 
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+
+
+#amsection_1 {
+    grid-area: s1;
+}
+
+
+#amdiv_1 {
+    display: flex;
+    background-color: #ccc;
+    position: relative;
+    top: 10px;
+    width: 70%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 75%;
+    flex-direction: column;
+ 
+}
+
+#amdiv_2 {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: red;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#amsection_2 {
+    grid-area: s2;
+    background: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#amimg_1 {
+    width: 45px;
+    position: relative;
+    left: 5px;
+}
+
+
+
+#argrid_wrapper {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 100px 509.33px 55px 529.33px 50px 810.33px;
+    grid-template-areas: 
+    "he he na"
+    "s1 s1 s1"
+    "s2 s2 s2"
+    "s3 s3 s3"
+    "s4 s4 s4"
+    "s5 s5 s5"
+    ;
+}
+
+#arsection_1 {
+    grid-area: s1;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: url(/img/concept.art.3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#arsection_2 {
+    background-color: rgb( 159, 160, 154);
+    grid-area: s2;
+}
+
+
+
+#arsection_3 {
+    grid-area: s3;
+    background-image: url(/img/concept.art.4.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+#arsection_4 {
+    background-color: rgb( 159, 160, 154);
+    grid-area: s4;
+}
+
+#arsection_5 {
+    grid-area: s5;    
+}
+
+
+#ardiv_1 {
+
+    height: 540.34px;
+    width: 100%;
+}
+
+#ardiv_2 {
+    height: 209px;
+    width: 375px;
+    background-color: rgb(26, 22, 21);
+    position: relative;
+    top: 10px;
+
+}
+
+#ardiv_3 {
+    background-color: rgb(26, 22, 21);
+    width: 375px;
+    height: 61px;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+#ardiv_4 {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+/* */
+
+#arimg_1 {
+    width: 100%;
+    height: 540.34px;
+}
+
+#arimg_2 {
+    height: 200px;
+    width: 375px;
+    position: relative;
+    bottom: 75px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 800px){
    
    
     #grid_wrapper {
         display: grid;
-        grid-template-columns: minmax(1fr, 1fr);
+        grid-template-columns: 50% 50%;
         grid-template-rows: 100px, 750px, 200px, 800px, 200px;
         grid-template-areas: 
         "he na"
@@ -163,10 +579,12 @@ footer {
         width: 50vw;
         background-color: rgb(159, 160, 154);
         top: 0px;
+        transition: 0s;
     }
 
     .nav_active {
         transform: none;
+        transition: 0s;
     }
 
     .burger_toggle {
@@ -174,13 +592,175 @@ footer {
         display: none;
     }
 
-    header {
-        width: 50vw;
+    #machinarium_logo {
+        height: 80%;
+        width: 40%;
+        position: relative;
+        top: 5px;
+        left: 90px;
     }
 
-    nav {
-        color: rgba(159, 160, 154, 0);
+    #idiv_1 {
+        font-size: 35px;
+        width: 32.5%;
+    }
+    #idiv_2 {
+        height: 20px;
+        width: auto;
+        font-size: 20px;
+        position: relative;
+        left: 300px;
+        font-style: italic;
+       
+    }
+
+    
+
+    #idiv_5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        flex-direction: column;
+        position: relative;
+        left: 100px;
     }
     
+
+    #idiv_6 {
     
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        flex-direction: column;
+        position: relative;
+      
+    }
+    
+    #idiv_7 {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        flex-direction: column;
+        position: relative;
+        right: 90px;
+    }
+
+
+
+    #burger div {
+        width: 40px;
+        height: 7px;
+        background-color: rgba(232, 103, 48, 0.674);
+        margin: 7px;
+        border-radius: 15px;
+        transition: all 0.5s;
+    }
+
+    #iarticle_1 {
+        background-color:rgba(96, 96, 110, 0.85);
+        height: 500px;
+        width: 300px;
+        position: relative;
+        top: 170px;
+        right: 50%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        opacity: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+        color: rgb(218, 218, 218);
+        margin: 5px;
+        padding: 7px;
+        border-radius: 7px;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 14px;
+    }
+
+    #iarticle_2 {
+        width: 70%;
+        height: 400px;
+        font-size: 90%;
+        color: white;
+    }
+    
+    #icontainer_1 {
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        display: flex; 
+        justify-content: space-around; 
+        position: absolute;
+        bottom: 0px;
+        
+    }
+    
+    #iimgcontainer_1 {
+        height: 70%;
+        width: auto;
+        position: relative;
+    
+    }
+    #iimgcontainer_3 {
+        height: 70%;
+        width: auto;
+        position: relative;
+    }
+    
+    #iimgcontainer_2 {
+    height: 70%;
+    width: auto;
+    position: relative;
+    }
+
+
+    #isection_1 {
+        grid-area: s1;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-image: url(/img/machinarium.background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+
+
+    
+    #swiper_img1 {
+    background-image: url(/img/samorost.background.jpg);
+    background-size: cover;
+    }
+
+    #swiper_img2 {
+    background-image: url(/img/botanicula.background.jpg);
+    background-size: cover;
+
+    }
+
+    #swiper_img3 {
+    background-image: url(/img/phonopolis.background.jpg);
+    background-size: cover;
+    }
+    
+    #amdiv_1 {
+        display: flex;
+        background-color: #ccc;
+        position: relative;
+        width: 80%;
+        height: 75%;
+        padding: 15px;
+        border-radius: 6px;
+        font-size: 115%;
+        flex-direction: column;
+    
+     
+    }
+
+    #amimg_1 {
+        width: 55px;
+
+    }
+
 }
