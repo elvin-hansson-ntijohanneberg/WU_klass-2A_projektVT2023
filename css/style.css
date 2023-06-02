@@ -190,7 +190,7 @@ h1{
 #burger div {
     width: 30px;
     height: 5.25px;
-    background-color: rgb(232, 103, 48);
+    background-color: rgb(31, 27, 25);
     border-radius: 15px;
     transition: all 0.5s;
     margin: 5px;
@@ -213,14 +213,14 @@ h1{
     margin: 5px;
     padding: 7px;
     border-radius: 7px;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15.5px;
 }
 
 #iarticle_2 {
     width: 70%;
     height: 400px;
-    font-size: 65%;
+    font-size: 70%;
     color: white;
 }
 
@@ -269,7 +269,7 @@ h1{
 }
 
 .burger_toggle #burger_line_3 {
-    transform: rotate(45deg) translate(-6px, -10px)
+    transform: rotate(45deg) translate(-5px, -10px)
 }
 
 .nav_active {
@@ -404,7 +404,7 @@ header {
 }
 
 
-#amdiv_1 {
+#amarticle_1 {
     display: flex;
     background-color: #ccc;
     position: relative;
@@ -438,6 +438,7 @@ header {
 #amimg_1 {
     width: 45px;
     position: relative;
+    bottom: 5px;
     left: 5px;
 }
 
@@ -446,7 +447,7 @@ header {
 #argrid_wrapper {
     display: grid;
     grid-template-columns: 50% 25% 25%;
-    grid-template-rows: 100px 509.33px 55px 529.33px 50px 810.33px;
+    grid-template-rows: 100px 600px 55px 600px 50px 749.33px;
     grid-template-areas: 
     "he he na"
     "s1 s1 s1"
@@ -457,26 +458,11 @@ header {
     ;
 }
 
+
+
+
 #arsection_1 {
     grid-area: s1;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-image: url(/img/concept.art.3.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-#arsection_2 {
-    background-color: rgb( 159, 160, 154);
-    grid-area: s2;
-}
-
-
-
-#arsection_3 {
-    grid-area: s3;
     background-image: url(/img/concept.art.4.webp);
     background-size: cover;
     background-position: center;
@@ -490,9 +476,30 @@ header {
     
 }
 
+#arsection_2 {
+    background-color: rgb( 159, 160, 154);
+    grid-area: s2;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#arsection_3 { 
+    grid-area: s3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(/img/concept.art.3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+
 #arsection_4 {
     background-color: rgb( 159, 160, 154);
     grid-area: s4;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 #arsection_5 {
@@ -501,53 +508,228 @@ header {
 
 
 #ardiv_1 {
-
     height: 540.34px;
     width: 100%;
+    background-image: url(/img/concept.art.5.crop.webp);
+    background-size: cover;
 }
 
 #ardiv_2 {
     height: 209px;
-    width: 375px;
-    background-color: rgb(26, 22, 21);
+    width: 100%;
+    background-color: rgb(30, 38, 38);
     position: relative;
-    top: 10px;
+    top: 5%px;
 
 }
 
 #ardiv_3 {
-    background-color: rgb(26, 22, 21);
-    width: 375px;
-    height: 61px;
-    padding: 0;
-    margin: 0;
-
-
+    height: 200px;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    background-image: url(/img/footer.1.png);
+    background-size: cover;
 }
 
-#ardiv_4 {
+#ararticle_2 {
     background-color: black;
-    width: 50px;
-    height: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 82.5%;
+    width: 50%;
+    height: 350px;
+    position: relative;
+    left: 5%;
+    top: 10%;
+    display: flex;
+    padding: 20px;
+    border-radius: 7px;
 }
+
+
 /* */
 
-#arimg_1 {
-    width: 100%;
-    height: 540.34px;
-}
 
-#arimg_2 {
-    height: 200px;
-    width: 375px;
+#ardiv_5 {
+    height: 12.5%;
+    width: 50%;
+    background-color: black;
+    color: white;
+    font-size: 90%;
+    font-family: 'Gloria Hallelujah';
     position: relative;
-    bottom: 75px;
- 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+
+}
+
+#ararticle_1 {
+    height: 350px;
+    width: 50%;
+    background-color: black;
+    color: white;
+    font-size: 65%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 50px;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+#ardiv_7 {
+    height: 10%;
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-size: 65%;
+    font-family: 'Gloria Hallelujah';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 7px;
+    
+}
+
+
+#engrid_wrapper {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 100px 600px 25px 600px 20px 749.33px;
+    grid-template-areas: 
+    "he he na"
+    "s1 s1 s1"
+    "s2 s2 s2"
+    "s3 s3 s3"
+    "s4 s4 s4"
+    "s5 s5 s5"
+    ;
 }
 
 
 
+#ensection_1 {
+    grid-area: s1;
+    background-image: url(/img/machinarium.background.4.crop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
 
+#ensection_2 {
+    background-color: rgb( 159, 160, 154);
+    grid-area: s2;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+
+
+#ensection_3 { 
+    grid-area: s3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(/img/machinarium.background.5.crop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+
+#ensection_4 {
+    background-color: rgb( 159, 160, 154);
+    grid-area: s4;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#ensection_5 {
+    grid-area: s5;    
+}
+
+
+#endiv_1 {
+    height: 10%;
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-size: 100%;
+    font-family: 'Gloria Hallelujah';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 7px;
+    position: relative;
+    bottom: 25%;
+    
+}
+
+#enarticle_1 {
+    height: 350px;
+    width: 65%;
+    background-color: black;
+    color: white;
+    font-size: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 15%;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+#endiv_3 {
+    height: 540.34px;
+    width: 100%;
+    background-image: url(/img/machinarium.background.6.crop.jpg);
+    background-size: cover;
+}
+
+#enarticle_2 {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75%;
+    width: 50%;
+    height: 350px;
+    position: relative;
+    left: 25%;
+    top: 10%;
+    display: flex;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+#endiv_5 {
+    height: 209px;
+    width: 100%;
+    background-color: rgb(30, 38, 38);
+    position: relative;
+
+}
+
+#endiv_6 {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    background-image: url(/img/footer.1.png);
+    background-size: cover;
+}
+
+
+
+/* */
 
 
 
@@ -594,7 +776,7 @@ header {
 
     #machinarium_logo {
         height: 80%;
-        width: 40%;
+        width: 37.5%;
         position: relative;
         top: 5px;
         left: 90px;
@@ -602,7 +784,7 @@ header {
 
     #idiv_1 {
         font-size: 35px;
-        width: 32.5%;
+        width: 22.5%;
     }
     #idiv_2 {
         height: 20px;
@@ -611,6 +793,13 @@ header {
         position: relative;
         left: 300px;
         font-style: italic;
+       
+    }
+
+    #idiv_4 {
+        position: relative;
+        right: 12.5%;
+        width: 45%;
        
     }
 
@@ -647,16 +836,6 @@ header {
     }
 
 
-
-    #burger div {
-        width: 40px;
-        height: 7px;
-        background-color: rgba(232, 103, 48, 0.674);
-        margin: 7px;
-        border-radius: 15px;
-        transition: all 0.5s;
-    }
-
     #iarticle_1 {
         background-color:rgba(96, 96, 110, 0.85);
         height: 500px;
@@ -673,14 +852,13 @@ header {
         margin: 5px;
         padding: 7px;
         border-radius: 7px;
-        font-family: 'Shadows Into Light', cursive;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     #iarticle_2 {
         width: 70%;
         height: 400px;
-        font-size: 90%;
+        font-size: 100%;
         color: white;
     }
     
@@ -740,11 +918,11 @@ header {
     }
 
     #swiper_img3 {
-    background-image: url(/img/phonopolis.background.jpg);
+    background-image: url(/img/phonopolis.background.webp);
     background-size: cover;
     }
     
-    #amdiv_1 {
+    #amarticle_1 {
         display: flex;
         background-color: #ccc;
         position: relative;
@@ -763,4 +941,274 @@ header {
 
     }
 
+
+
+    
+#argrid_wrapper {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 100px 600px 56px 528.33px 50px 799.33px;
+    grid-template-areas: 
+    "he he na"
+    "s1 s1 s1"
+    "s2 s2 s2"
+    "s3 s3 s3"
+    "s4 s4 s4"
+    "s5 s5 s5"
+    ;
+}
+
+#arsection_1 {
+    grid-area: s1;
+}
+    
+
+#arsection_3 {
+    grid-area: s3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(/img/concept.art.3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+
+#ardiv_1 {
+    height: 540.34px;
+    width: 100%;
+    background-image: url(/img/concept.art.5.jpg);
+    background-size: cover;
+}
+
+#ardiv_2 {
+    height: 259px;
+    width: 100%;
+    background-color: rgb(30, 38, 38);
+    position: relative;
+    top: 0px;
+
+}
+
+#ardiv_3 {
+    height: 260px;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    background-image: url(/img/footer.2.png);
+    background-size: cover;
+}
+
+
+
+
+#ararticle_2 {
+    background-color: black;
+    color: white;
+    font-size: 105%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 32.5%;
+    height: 370px;
+    position: relative;
+    left: 5%;
+    top: 7.5%;
+    display: flex;
+    padding: 20px;
+}
+
+
+#ardiv_5 {
+    height: 7.5%;
+    width: 25%;
+    background-color: black;
+    color: white;
+    font-size: 95%;
+    font-family: 'Gloria Hallelujah';
+    position: relative;
+    left: 35%;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+
+}
+
+#ararticle_1 {
+    height: 60%;
+    width: 25%;
+    background-color: black;
+    color: white;
+    font-size: 62.5% ;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 35%;
+    top: 10px;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+
+#ardiv_7 {
+    height: 12.5%;
+    width: 50%;
+    background-color: black;
+    color: white;
+    font-size: 105%;
+    font-family: 'Gloria Hallelujah';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 7px;
+    
+}
+
+
+#engrid_wrapper {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 100px 600px 75px 600px 70px 749.33px;
+    grid-template-areas: 
+    "he he na"
+    "s1 s1 s1"
+    "s2 s2 s2"
+    "s3 s3 s3"
+    "s4 s4 s4"
+    "s5 s5 s5"
+    ;
+}
+
+
+#ensection_1{
+    background-image: url(/img/machinarium.background.4.jpg);
+}
+
+#ensection_3{
+    background-image: url(/img/machinarium.background.5.jpg);
+}
+
+#endiv_1 {
+    height: 10%;
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-size: 190%;
+    font-family: 'Gloria Hallelujah';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 7px;
+    position: relative;
+    bottom: 25%;
+    
+}
+
+#enarticle_1 {
+    font-size: 115%;
+    bottom: 5%;
+}
+
+
+#endiv_3 {
+    height: 540.34px;
+    width: 100%;
+    background-image: url(/img/machinarium.background.6.jpg);
+    background-size: cover;
+}
+
+#enarticle_2 {
+    font-size: 120%;
+}
+
+
+#endiv_6 {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    bottom: 90px;
+    background-image: url(/img/footer.2.png);
+    background-size: cover;
+}
+
+
+}
+
+@media screen and (min-width: 1000px){
+    #idiv_1{
+        right: 15px;
+    }
+
+    #iarticle_1{
+        right: 51.25%;
+    }
+    
+    #iarticle_2{
+        font-size: 20px;
+    }
+    
+    #amarticle_1{
+        font-size: 140%;
+    }
+
+    #ardiv_1{
+        font-size: 122.5%;
+    }
+    #ardiv_5{
+        height: 10%;
+        font-size: 110%;
+    }
+
+    #ararticle_1{
+        font-size: 80%;
+    }
+
+    #ardiv_7{
+        width: 50%;
+        font-size: 160%;
+    }
+
+
+    #engrid_wrapper {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: 100px 600px 75px 600px 70px 769.34px;
+        grid-template-areas: 
+        "he he na"
+        "s1 s1 s1"
+        "s2 s2 s2"
+        "s3 s3 s3"
+        "s4 s4 s4"
+        "s5 s5 s5"
+        ;
+    }
+    
+    #endiv_1{
+        width: 45%;
+        font-size: 200%;
+    }
+
+    #enarticle_1{
+        font-size: 150%;
+    }
+
+    #endiv_3{
+        height: 560.34px;
+    }
+
+    #enarticle_2{
+        font-size: 155%;
+    }
+
+    #endiv_5{
+        height: 209px;
+    }
+
+    #endiv_6{
+        bottom: 60px;
+    }
 }
